@@ -25,8 +25,8 @@ class App:
 
     def __init__(self):
         # Set appearance mode and color theme
-        ctk.set_appearance_mode("system")  # Modes: "System" (standard), "Dark", "Light"
-        ctk.set_default_color_theme("blue")  # Themes: "blue" (standard), "green", "dark-blue"
+        ctk.set_appearance_mode("light")  # Modes: "System" (standard), "Dark", "Light"
+        ctk.set_default_color_theme("green")  # Themes: "blue" (standard), "green", "dark-blue"
 
         self.root = ctk.CTk()
         self.root.title("Student Grade Management System")
@@ -40,6 +40,12 @@ class App:
 
         # Show login on start
         self.show_login()
+
+    def save_data(self):
+        """Saves all data to CSV files."""
+        save_students(self.students)
+        save_courses(self.courses)
+        save_grades(self.grades)
 
     def show_login(self):
         """Shows the login window."""
