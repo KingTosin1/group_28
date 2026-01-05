@@ -3,3 +3,5 @@ student_id,course_code,grade,semester
 12345,CSC101,B,2023/2024 Semester 1
 12345,MATH,A,2023/2024 Semester 1
 Tosin,MTH 301,A,2023/2024 Semester 1
+12345,COS 301,B,2023/2024 Semester 1
+Tosin,MTH 301,A,2023/2024 Semester 2
